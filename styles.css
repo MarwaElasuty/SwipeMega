@@ -13,7 +13,7 @@
     --text-dark: black;
     --text-white: white;
     --text-light: #adbdcc;
-    --text-secondary: #adbdcc;
+    --text-secondary: #f4f4f4;
     --text-baby-blue: #00d4ff;
     --link-color: #7000ff;
     --link-hover: #0a2540;
@@ -840,7 +840,31 @@ img[alt="avatar2"]{
     display: none;
 }
 
+footer{
+    background-color: var(--text-secondary);
+    }
+
 .footer-info{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: var(--spacing-lg) var(--spacing-lg);
+    row-gap: 20px;
 }
+
+.footer-info p{
+    color: var(--text-dark);
+    padding: 5px 0;
+    padding-top: 15px;
+}
+
+.icon-link{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.icon-link p{
+    padding: var(--spacing-md) 0;
+}
+
