@@ -539,7 +539,7 @@ img[alt="terminal-code"]{
 .why-swipe{
     background-color: var(--text-white);
     margin: calc(var(--spacing-xl) * 2) 0;
-    padding: var(--spacing-md) 0;
+    padding: var(--spacing-lg) var(--spacing-md);
 }
 
 .why-swipe p {
@@ -549,14 +549,29 @@ img[alt="terminal-code"]{
 .swipe-cards{
     display: flex;
     margin: var(--spacing-lg) 0;
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.swipe-cards > div{
+    width: 22%;
+
 }
 
+.why-swipe-cards{
+    display: flex;
+    margin: var(--spacing-lg) 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.why-swipe-cards > div{
+    width: 22%;
+}
 .global-scale{
     background-color: var(--text-dark);
     position: relative;
     margin: calc(var(--spacing-xl) * 2) 0;
-    padding: calc(var(--spacing-xl) * 2) 0;
+    padding: var(--spacing-lg) var(--spacing-md);
 }
 .global-scale h2, p, h3{
     color: var(--text-white);
@@ -583,6 +598,10 @@ img[alt="global-graphic"]{
     padding-left: 10px;
     position: relative;
     z-index: 1;
+}
+
+.virtual-events {
+    padding: var(--spacing-lg) var(--spacing-md);
 }
 
 .virtual-events p{
@@ -630,7 +649,7 @@ img[alt="avatar2"]{
 }
 .encourage{
     margin: var(--spacing-lg) 0;
-    padding: calc(var(--spacing-xl) * 2) 0;
+    padding: var(--spacing-lg) var(--spacing-md);
 }
 
 .encourage h3{
@@ -836,6 +855,50 @@ img[alt="avatar2"]{
         width: 100%;
     }
 }
+
+/*Swipe cards media query*/
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    .swipe-cards > div{
+        width: 100%;
+    }
+    
+    .why-swipe-cards > div{
+        width: 100%;
+    }
+    
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .swipe-cards > div{
+        width: 100%;
+    }
+    
+    .why-swipe-cards > div{
+        width: 100%;
+    }
+    
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .swipe-cards > div{
+        width: 100%;
+    }
+    
+    .why-swipe-cards > div{
+        width: 100%;
+    }
+    
+}
+@media  screen and (max-width: 600px){
+    .swipe-cards > div{
+        width: 100%;
+    }
+    
+    .why-swipe-cards > div{
+        width: 100%;
+    }
+    
+}
+
+
 
 .mobileNav {
     display: none;
