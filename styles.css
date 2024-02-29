@@ -145,6 +145,7 @@ nav {
 
 .hero p {
     max-width: 79%;
+    color: var(--text-dark);
 }
 
 .hero-btn {
@@ -162,7 +163,7 @@ nav {
 .engineers{
     color: var(--text-white);
     background-color: var(--text-dark);
-    padding: var(--spacing-md) 0;
+    padding: var(--spacing-lg) var(--spacing-md);
 }
 
 .engineers .two-columns{
@@ -496,7 +497,7 @@ img[alt="zoom"] {
     margin: var(--spacing-lg) 0;
     margin: auto;
     margin-top: var(--spacing-xl);
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-lg) var(--spacing-md);
 }
 
 img[alt="credit-card"] {
@@ -897,6 +898,54 @@ img[alt="avatar2"]{
     }
     
 }
+
+
+/* .graphics-photo-grid {
+    width: 100%;
+    max-width: var(--standard-width);
+    display: grid;
+    grid-template-areas:
+        "a b b"
+        "c b b"
+        "c d d"
+        "c d d";
+    margin: auto;
+    grid-gap: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+    margin: auto;
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg) 0;
+} */
+/*graphics photo grid media query*/
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+   
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .graphics-photo-grid{
+        grid-template-areas: 
+        "a b b"
+        "c b b"
+        "c d d";
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .graphics-photo-grid{
+        grid-template-areas: 
+        "a a a"
+        "b b b"
+        "c d d";
+    }
+}
+@media  screen and (max-width: 600px){
+    .graphics-photo-grid{
+        grid-template-areas: 
+        "a a a"
+        "b b b"
+        "c d d";
+    }
+}
+
+
 
 
 
