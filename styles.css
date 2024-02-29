@@ -84,7 +84,8 @@ nav {
     width: 100%;
     max-width: var(--standard-width);
     margin: var(--margin-auto);
-    padding: var(--spacing-sm) var(--spacing-md);;
+    padding: var(--spacing-sm) var(--spacing-md);
+    ;
 }
 
 .hamburger {
@@ -108,7 +109,7 @@ nav {
 
 
 .mobile-menu {
-    list-style-type: none;
+    display: none;
 }
 
 .mobile-menu>li {
@@ -239,7 +240,7 @@ p {
     transition: all 1s;
 }
 
-.mobile-navbar-btn{
+.mobile-navbar-btn {
     font-size: var(--primary-btn-size);
     letter-spacing: 1.25px;
     font-weight: var(--btn-weight);
@@ -332,14 +333,31 @@ p {
     .hamburger {
         display: block;
     }
-    .menu{
+
+    .menu {
         display: none;
     }
 
-    .navbar-btn{
+    .navbar-btn {
         display: none;
     }
 
+    .mobile-menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        padding: var(--s);
+        padding: var(--spacing-lg) var(--spacing-lg);
+        right: 26px;
+        top: 60px;
+        border-radius: 15px;
+        font-size: 22px;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -361,15 +379,33 @@ p {
         transition: transform 1.5s;
         border-radius: 12px;
     }
+
     .hamburger {
         display: block;
     }
-    .menu{
+
+    .menu {
         display: none;
     }
 
-    .navbar-btn{
+    .navbar-btn {
         display: none;
+    }
+    .mobile-menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        padding: var(--s);
+        padding: var(--spacing-lg) var(--spacing-lg);
+        right: 26px;
+        top: 60px;
+        border-radius: 15px;
+        font-size: 22px;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -392,16 +428,34 @@ p {
         transition: transform 1.5s;
         border-radius: 12px;
     }
+
     .hamburger {
         display: block;
     }
 
-    .menu{
+    .menu {
         display: none;
     }
 
-    .navbar-btn{
+    .navbar-btn {
         display: none;
+    }
+
+    .mobile-menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        padding: var(--s);
+        padding: var(--spacing-lg) var(--spacing-lg);
+        right: 26px;
+        top: 60px;
+        border-radius: 15px;
+        font-size: 22px;
+        align-items: center;
+        justify-content: center;
     }
 }
 
