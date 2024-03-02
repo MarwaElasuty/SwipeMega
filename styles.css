@@ -176,15 +176,24 @@ nav {
     .hero p{
         max-width: 100%;
     }
+    .hero-phone{
+        width: 100%;
+    }
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
     .hero p{
         max-width: 100%;
     }
+    .hero-phone{
+        width: 100%;
+    }
 }
 @media  screen and (max-width: 600px){
     .hero p{
         max-width: 100%;
+    }
+    .hero-phone{
+        width: 100%;
     }
 }
 
@@ -676,8 +685,13 @@ img[alt="global-graphic"]{
     padding: var(--spacing-lg) var(--spacing-md);
 }
 
+.virtual-events .two-columns{
+    row-gap: 20px;
+}
+
 .virtual-events p{
     color: var(--text-dark);
+    width: 86%;
 }
 
 .virtual-events h3{
@@ -696,12 +710,11 @@ img[alt="global-graphic"]{
     box-shadow: var(--standard-box-shadow);
     background: linear-gradient(to bottom, #7000ff 5%, transparent 53%);
     padding: var(--spacing-lg) var(--spacing-lg);
-    width: 500px;
     position: relative;
 }
 
 .stylish-session-card > p{
-    width: 60%;
+    width: 73%;
     line-height: 25px;
     font-weight: 600;
 }
@@ -712,9 +725,33 @@ img[alt="swipe-session"]{
 
 img[alt="avatar2"]{
     position: absolute;
-    top: 110px;
-    right: 193px;
+    top: 120px;
+    left: 154px;
 }
+
+/* virtual events media query*/
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    .virtual-events p{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .virtual-events p{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .virtual-events p{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 600px){
+    .virtual-events p{
+        width: 100%;
+    }
+
+}
+
 .gray-text{
     color:var(--text-secondary);
     font-weight: 400;
@@ -738,6 +775,27 @@ img[alt="avatar2"]{
 }
 
 
+/*encourage media query */
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    .encourage .left-column > p{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .encourage .left-column > p{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .encourage .left-column > p{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 600px){
+    .encourage .left-column > p{
+        width: 100%;
+    }
+}
 
 /*NAVIGATION BAR media query*/
 @media screen and (max-width: 1200px) and (min-width:992px) {}
