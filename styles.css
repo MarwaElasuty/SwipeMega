@@ -126,7 +126,9 @@ ul a:hover{
 }
 
 .nav-btns .primary-btn:hover{
-    background-color: var(--text-light);
+    background-color: var(--text-dark);
+    color: var(--text-white);
+
 }
 .menu-btns > img:nth-of-type(1){
     padding-right: 10px;
