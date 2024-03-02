@@ -17,33 +17,34 @@
 <body>
     <header>
         <nav>
-            <img src="./images/logo-white.svg" alt="brand">
-
-            <ul class="menu">
-                <li><a class="menu-link" href="#">Contact</a></li>
-                <li><a class="menu-link" href="#">About</a></li>
-                <li><a class="menu-link" href="#">Blog</a></li>
-                <li><a class="menu-link" href="#">Support</a></li>
-
-            </ul>
-            <button type="button" class="navbar-btn" name="signup-btn">Sign up</button>
-            <div class="hamburger">
-                <img src="./images/menu-burger.png" class="hamburger-menu" alt="hamburger-menu">
+            <div class="logo-div">
+                <a href="index.html">
+                    <img src="./images/logo-white.svg" alt="logo">
+                </a>
             </div>
 
+            <div class="ul-list">
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>        
+                </ul>
+                <div class="menu-btns">
+                    <button type="button" name="login" class="primary-btn">Sign up</button>
+                </div>
+            </div>
+
+
+            <div class="nav-btns-w-search">
+                <div class="nav-btns">       
+                 <button type="button" name="login" class="primary-btn">Sign up</button>
+   
+                </div>
+
+                <img src="./images/menu-burger.png" alt="menu-burger" onclick="appear()">
+            </div>
         </nav>
     </header>
-
-    <nav class="mobileNav openDrawer">
-        <ul class="mobile-menu">
-            <li><a class="menu-link" href="#">Contact</a></li>
-            <li><a class="menu-link" href="#">About</a></li>
-            <li><a class="menu-link" href="#">Blog</a></li>
-            <button type="button" class="mobile-navbar-btn" name="signup-btn">Sign up</button>
-
-        </ul>
-    </nav>
-
 
     <main>
         <div class="hero">
