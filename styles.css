@@ -921,7 +921,6 @@ footer{
         max-width: 100%;
     }
     .hero-phone{
-        width: 100%;
     }
     .hero{
         padding: var(--spacing-lg) var(--spacing-sm);
@@ -932,7 +931,6 @@ footer{
         max-width: 100%;
     }
     .hero-phone{
-        width: 100%;
     }
     .hero{
         padding: var(--spacing-lg) var(--spacing-sm);
