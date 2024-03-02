@@ -63,7 +63,7 @@
     /*Spacing*/
     --spacing-sm: 8px;
     --spacing-md: 16px;
-    --spacing-lg: 32px;
+    --spacing-lg: 28px;
     --spacing-xl: 64px;
 }
 
@@ -179,6 +179,9 @@ nav {
     .hero-phone{
         width: 100%;
     }
+    .hero{
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
     .hero p{
@@ -187,6 +190,9 @@ nav {
     .hero-phone{
         width: 100%;
     }
+    .hero{
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
 }
 @media  screen and (max-width: 600px){
     .hero p{
@@ -194,6 +200,9 @@ nav {
     }
     .hero-phone{
         width: 100%;
+    }
+    .hero{
+        padding: var(--spacing-lg) var(--spacing-sm);
     }
 }
 
@@ -552,6 +561,7 @@ img[alt="zoom"] {
 
 .unified-platform{
     padding: var(--spacing-lg) var(--spacing-md);
+    margin: var(--spacing-lg) 0;
 }
 
 .unified-platform .two-columns {
@@ -562,6 +572,28 @@ img[alt="zoom"] {
 }
 .unified-platform .subtitle{
     color: var(--purple-btn-color);
+}
+
+/* unified platform media query */
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    .unified-platform{
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .unified-platform{
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .unified-platform{
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
+}
+@media  screen and (max-width: 600px){
+    .unified-platform{
+        padding: var(--spacing-lg) var(--spacing-sm);
+    }
 }
 
 .graphics-photo-grid {
@@ -749,11 +781,18 @@ img[alt="avatar2"]{
     .virtual-events p{
         width: 100%;
     }
+}
+
+/* custom media query for virtual events galaxy fold*/
+@media screen and (max-width: 653px) and (min-width:280px){
+    img[alt="avatar2"]{
+        display: none;
+    }
 
 }
 
 .gray-text{
-    color:var(--text-secondary);
+    color:var(--text-light);
     font-weight: 400;
 }
 .encourage{
@@ -772,6 +811,10 @@ img[alt="avatar2"]{
 
 .encourage .primary-btn{
     background-color: var(--purple-btn-color);
+}
+
+.encourage .two-columns{
+    row-gap: 15px;
 }
 
 
@@ -841,8 +884,8 @@ img[alt="avatar2"]{
         background-color: white;
         padding: var(--s);
         padding: var(--spacing-lg) var(--spacing-lg);
-        right: 26px;
-        top: 60px;
+        right: 20px;
+        top: 74px;
         border-radius: 15px;
         font-size: 22px;
         align-items: center;
@@ -891,8 +934,8 @@ img[alt="avatar2"]{
         background-color: white;
         padding: var(--s);
         padding: var(--spacing-lg) var(--spacing-lg);
-        right: 26px;
-        top: 60px;
+        right: 20px;
+        top: 74px;
         border-radius: 15px;
         font-size: 22px;
         align-items: center;
@@ -941,8 +984,8 @@ img[alt="avatar2"]{
         background-color: white;
         padding: var(--s);
         padding: var(--spacing-lg) var(--spacing-lg);
-        right: 26px;
-        top: 60px;
+        right: 20px;
+        top: 74px;
         border-radius: 15px;
         font-size: 22px;
         align-items: center;
