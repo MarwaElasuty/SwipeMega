@@ -616,7 +616,7 @@ img[alt="global-graphic"]{
 }
 
 .virtual-events {
-    padding: var(--spacing-lg) var(--spacing-md);
+    padding: var(--spacing-xl) var(--spacing-md);
 }
 
 .virtual-events .two-columns{
