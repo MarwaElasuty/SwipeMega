@@ -508,13 +508,20 @@ nav {
 
 .hero {
     background-color: var(--text-secondary);
-    padding: var(--spacing-lg) var(--spacing-md);
+    padding: var(--spacing-xl) var(--spacing-md);
 }
 
+.hero-btns {
+    display: flex;
+    column-gap: 20px;
+}
 .hero .two-columns {
     row-gap: 18px;
 }
 
+.hero-btns .with-icon:nth-of-type(2){
+    color: var(--purple-btn-color);
+}
 .hero-btn {
     font-size: var(--primary-btn-size);
     letter-spacing: 1.25px;
@@ -871,7 +878,7 @@ img[alt="zoom"] {
     margin: var(--spacing-lg) 0;
     margin: auto;
     margin-top: var(--spacing-xl);
-    padding: var(--spacing-lg) var(--spacing-md);
+    padding: 0 0 var(--spacing-xl) 0;
 }
 
 img[alt="credit-card"] {
@@ -928,6 +935,7 @@ img[alt="terminal-code"] {
     justify-content: space-between;
 }
 
+
 .swipe-cards>div {
     width: 22%;
 
@@ -948,6 +956,19 @@ img[alt="terminal-code"] {
     background-color: var(--text-dark);
     position: relative;
     padding: var(--spacing-lg) var(--spacing-md);
+}
+#card1, #card2, #card3, #card4{
+    width: 22%;
+}
+
+#swipe-cards-left-column{
+    width: 22%;
+}
+#swipe-cards-second-left-column{
+    width: 22%;
+}
+.global-scale .left-column{
+    width:70%;
 }
 
 .global-scale h2,
@@ -1351,6 +1372,7 @@ footer {
             "c d"
             "e f"
             "g h";
+            
     }
 }
 
@@ -1363,6 +1385,8 @@ footer {
             "a b b"
             "c b b"
             "c d d";
+            padding: 0 var(--spacing-md);
+
     }
 }
 
@@ -1372,6 +1396,8 @@ footer {
             "a a a"
             "b b b"
             "c d d";
+            padding: 0 var(--spacing-md);
+
     }
 }
 
@@ -1381,6 +1407,7 @@ footer {
             "a a a"
             "b b b"
             "c d d";
+        padding: 0 var(--spacing-md);
     }
 }
 
@@ -1391,7 +1418,7 @@ footer {
     }
 
     .why-swipe-cards>div {
-        width: 100%;
+        width: 47%;
     }
 
 }
@@ -1493,27 +1520,31 @@ footer {
 /* unified platform media query */
 @media screen and (max-width: 1200px) and (min-width:992px) {
     .unified-platform {
-        padding: var(--spacing-lg) var(--spacing-sm);
+        padding: var(--spacing-lg) var(--spacing-md);
     }
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
     .unified-platform {
-        padding: var(--spacing-lg) var(--spacing-sm);
+        padding: var(--spacing-lg) var(--spacing-md);
     }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
     .unified-platform {
-        padding: var(--spacing-lg) var(--spacing-sm);
+        padding: var(--spacing-lg) var(--spacing-md);
     }
 }
 
 @media screen and (max-width: 600px) {
     .unified-platform {
-        padding: var(--spacing-lg) var(--spacing-sm);
+        padding: var(--spacing-lg) var(--spacing-md);
     }
 }
+
+
+
+
 
 /* Footer media query */
 
@@ -1539,4 +1570,37 @@ footer {
 .footer-info{
     justify-content: space-evenly;
 }
+}
+ 
+
+/* global scale media query */
+
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    .global-scale .left-column{
+        width:70%;
+    }
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .global-scale .left-column{
+        width:100%;
+    }
+    #card1, #card2, #card3, #card4{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .global-scale .left-column{
+        width:100%;
+    }
+    #card1, #card2, #card3, #card4{
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 600px){
+    .global-scale .left-column{
+        width:100%;
+    }
+    #card1, #card2, #card3, #card4{
+        width: 100%;
+    }
 }
